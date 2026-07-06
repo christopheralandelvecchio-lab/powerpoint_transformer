@@ -1,0 +1,4 @@
+object_id,slide_number,parent_group_id,shape_name,shape_type,text,left_in,top_in,width_in,height_in,rotation
+S001_OBJ_0001,1,,Picture 1,PICTURE,,0.5,0.5,1.5,1.0,0.0
+S001_OBJ_0002,1,,Table 2,TABLE,,2.5,0.5,2.0,1.0,0.0
+S001_OBJ_0003,1,,Chart 3,CHART,,5.0,0.5,2.5,1.5,0.0

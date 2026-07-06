@@ -1,0 +1,11 @@
+object_id,slide_number,parent_group_id,shape_name,shape_type,text,left_in,top_in,width_in,height_in,rotation
+S001_OBJ_0001,1,,TextBox 1,TEXT_BOX,TC012 Sensor Input to Action Chain,0.3,0.1,12.6,0.4,0.0
+S001_OBJ_0002,1,,Temperature Sensor,AUTO_SHAPE,Temperature | Sensor,0.8,1.2,1.6,0.6,0.0
+S001_OBJ_0003,1,,Temperature Controller,AUTO_SHAPE,Temperature | Controller,3.0,1.2,1.7,0.6,0.0
+S001_OBJ_0004,1,,Fan Relay Action,AUTO_SHAPE,Fan Relay | Action,5.3,1.2,1.7,0.6,0.0
+S001_OBJ_0005,1,,Cooling Fan Output,AUTO_SHAPE,Cooling Fan | Output,7.7,1.2,1.7,0.6,0.0
+S001_OBJ_0006,1,,Temp OK Indicator,AUTO_SHAPE,Temp OK | Indicator,10.0,1.2,1.7,0.6,0.0
+S001_OBJ_0007,1,,Control Connector Temp,LINE,,2.4,1.5,0.6,0.0,0.0
+S001_OBJ_0008,1,,Control Connector Relay,LINE,,4.7,1.5,0.6,0.0,0.0
+S001_OBJ_0009,1,,Control Connector Fan,LINE,,7.0,1.5,0.7,0.0,0.0
+S001_OBJ_0010,1,,Control Connector Indicator,LINE,,9.4,1.5,0.6,0.0,0.0

@@ -1,0 +1,7 @@
+relationship_id,slide_number,connector_object_id,source_object_id,target_object_id,relationship_type,source_endpoint,target_endpoint,confidence,label_text,notes
+S001_REL_0001,1,S001_OBJ_0009,S001_OBJ_0002,S001_OBJ_0004,control_or_auth_flow,"2.4,1.075","3.3,2.6",1.0,,
+S001_REL_0002,1,S001_OBJ_0010,S001_OBJ_0003,S001_OBJ_0004,control_or_auth_flow,"2.4,1.875","3.3,2.6",1.0,,
+S001_REL_0003,1,S001_OBJ_0011,S001_OBJ_0004,S001_OBJ_0006,control_or_auth_flow,"5.0,2.6","5.9,3.425",1.0,,
+S001_REL_0004,1,S001_OBJ_0012,S001_OBJ_0005,S001_OBJ_0006,control_or_auth_flow,"2.4,3.275","5.9,3.425",1.0,,
+S001_REL_0005,1,S001_OBJ_0013,S001_OBJ_0006,S001_OBJ_0007,control_or_auth_flow,"7.4,3.4","8.3,3.425",1.0,,
+S001_REL_0006,1,S001_OBJ_0014,S001_OBJ_0007,S001_OBJ_0008,control_or_auth_flow,"10.0,3.4","10.6,3.4",1.0,,

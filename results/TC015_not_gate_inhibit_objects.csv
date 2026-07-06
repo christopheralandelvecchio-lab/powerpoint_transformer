@@ -1,0 +1,11 @@
+object_id,slide_number,parent_group_id,shape_name,shape_type,text,left_in,top_in,width_in,height_in,rotation
+S001_OBJ_0001,1,,TextBox 1,TEXT_BOX,TC015 NOT Gate Inhibit Logic,0.3,0.1,12.6,0.4,0.0
+S001_OBJ_0002,1,,Maintenance Mode Sensor,AUTO_SHAPE,Maintenance | Mode Sensor,0.8,1.1,1.8,0.6,0.0
+S001_OBJ_0003,1,,NOT Gate,AUTO_SHAPE,NOT Gate,3.5,1.1,1.4,0.65,0.0
+S001_OBJ_0004,1,,Auto Start Permitted,AUTO_SHAPE,Auto Start | Permitted,6.0,1.1,1.7,0.6,0.0
+S001_OBJ_0005,1,,Pump Start Command,AUTO_SHAPE,Pump Start | Command,8.4,1.1,1.7,0.6,0.0
+S001_OBJ_0006,1,,Pump Running Output,AUTO_SHAPE,Pump Running | Output,10.8,1.1,1.7,0.6,0.0
+S001_OBJ_0007,1,,Control Connector Inhibit,LINE,,2.6,1.4,0.9,0.025,0.0
+S001_OBJ_0008,1,,Control Connector Permit,LINE,,4.9,1.4,1.1,0.025,0.0
+S001_OBJ_0009,1,,Control Connector Start,LINE,,7.7,1.4,0.7,0.0,0.0
+S001_OBJ_0010,1,,Control Connector Output,LINE,,10.1,1.4,0.7,0.0,0.0

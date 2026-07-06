@@ -1,0 +1,18 @@
+test_case,status,actual_count,expected_count,actual_relationship_count,expected_relationship_count,message
+TC001,PASS,3,3,,,Object CSV and relationship CSV checks passed where applicable.
+TC002,PASS,2,2,,,Object CSV and relationship CSV checks passed where applicable.
+TC003,PASS,4,4,,,Object CSV and relationship CSV checks passed where applicable.
+TC004,PASS,3,3,,,Object CSV and relationship CSV checks passed where applicable.
+TC005,PASS,3,3,,,Object CSV and relationship CSV checks passed where applicable.
+TC006,PASS,0,0,,,Object CSV and relationship CSV checks passed where applicable.
+TC007,PASS,3,3,,,Object CSV and relationship CSV checks passed where applicable.
+TC008,PASS,31,31,,,Object CSV and relationship CSV checks passed where applicable.
+TC009,PASS,59,59,28,28,Object CSV and relationship CSV checks passed where applicable.
+TC010,PASS,38,38,13,13,Object CSV and relationship CSV checks passed where applicable.
+TC011,PASS,4,4,1,1,Object CSV and relationship CSV checks passed where applicable.
+TC012,PASS,10,10,4,4,Object CSV and relationship CSV checks passed where applicable.
+TC013,PASS,12,12,5,5,Object CSV and relationship CSV checks passed where applicable.
+TC014,PASS,10,10,4,4,Object CSV and relationship CSV checks passed where applicable.
+TC015,PASS,10,10,4,4,Object CSV and relationship CSV checks passed where applicable.
+TC016,PASS,12,12,5,5,Object CSV and relationship CSV checks passed where applicable.
+TC017,PASS,14,14,6,6,Object CSV and relationship CSV checks passed where applicable.

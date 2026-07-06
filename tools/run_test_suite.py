@@ -41,6 +41,8 @@ from src.powerpoint_extractor import (
 
 
 MANIFEST_NAME = "TEST_SUITE_MANIFEST.csv"
+TEST_SUITE_DIR = Path(__file__).parent.parent / "test_suite"
+ACTUAL_OUTPUT_DIR = Path(__file__).parent.parent / "results"
 
 
 @dataclass
@@ -103,7 +105,7 @@ def read_csv_rows(csv_path: Path) -> list[dict[str, str]]:
         ]
 
 
-def optional_path(test_suite_dir: Path, value: str) -> Optional[Path]:
+def optional_path(TEST_SUITE_DIR: Path, value: str) -> Optional[Path]:
     """
     Convert an optional manifest path cell into a Path or None.
     """
@@ -113,7 +115,7 @@ def optional_path(test_suite_dir: Path, value: str) -> Optional[Path]:
     if not value:
         return None
 
-    return test_suite_dir / value
+    return TEST_SUITE_DIR / value
 
 
 def optional_int(value: str) -> Optional[int]:
@@ -129,12 +131,12 @@ def optional_int(value: str) -> Optional[int]:
     return int(value)
 
 
-def load_manifest(test_suite_dir: Path) -> list[TestCase]:
+def load_manifest(TEST_SUITE_DIR: Path) -> list[TestCase]:
     """
     Load test case definitions from TEST_SUITE_MANIFEST.csv.
     """
 
-    manifest_path = test_suite_dir / MANIFEST_NAME
+    manifest_path = TEST_SUITE_DIR / MANIFEST_NAME
 
     if not manifest_path.exists():
         raise FileNotFoundError(f"Test suite manifest not found: {manifest_path}")
@@ -148,11 +150,11 @@ def load_manifest(test_suite_dir: Path) -> list[TestCase]:
             test_cases.append(
                 TestCase(
                     test_case=row["test_case"],
-                    input_file=test_suite_dir / row["input_file"],
-                    expected_csv=test_suite_dir / row["expected_csv"],
+                    input_file=TEST_SUITE_DIR / row["input_file"],
+                    expected_csv=TEST_SUITE_DIR / row["expected_csv"],
                     expected_object_count=int(row["expected_object_count"]),
                     expected_relationships_csv=optional_path(
-                        test_suite_dir,
+                        TEST_SUITE_DIR,
                         row.get("expected_relationships_csv", ""),
                     ),
                     expected_relationship_count=optional_int(
@@ -187,7 +189,7 @@ def compare_csv_files(actual_csv: Path, expected_csv: Path) -> tuple[bool, str]:
     return True, "CSV matched expected output."
 
 
-def run_test_case(test_case: TestCase, actual_output_dir: Path) -> TestResult:
+def run_test_case(test_case: TestCase, ACTUAL_OUTPUT_DIR: Path) -> TestResult:
     """
     Run one manifest-defined test case.
     """
@@ -198,7 +200,7 @@ def run_test_case(test_case: TestCase, actual_output_dir: Path) -> TestResult:
 
         actual_csv = write_objects_csv(
             objects=objects,
-            output_dir=actual_output_dir,
+            output_dir=ACTUAL_OUTPUT_DIR,
             pptx_path=test_case.input_file,
         )
 
@@ -216,7 +218,7 @@ def run_test_case(test_case: TestCase, actual_output_dir: Path) -> TestResult:
 
             actual_relationships_csv = write_relationships_csv(
                 relationships=relationships,
-                output_dir=actual_output_dir,
+                output_dir=ACTUAL_OUTPUT_DIR,
                 pptx_path=test_case.input_file,
             )
 
@@ -289,7 +291,7 @@ def summarize_results(results: list[TestResult]) -> TestSummary:
     )
 
 
-def write_test_report_csv(results: list[TestResult], actual_output_dir: Path) -> Path:
+def write_test_report_csv(results: list[TestResult], ACTUAL_OUTPUT_DIR: Path) -> Path:
     """
     Write offline test results to test_report.csv.
 
@@ -298,8 +300,8 @@ def write_test_report_csv(results: list[TestResult], actual_output_dir: Path) ->
     human review and baseline evidence packages.
     """
 
-    actual_output_dir.mkdir(parents=True, exist_ok=True)
-    report_path = actual_output_dir / "test_report.csv"
+    ACTUAL_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    report_path = ACTUAL_OUTPUT_DIR / "test_report.csv"
 
     with report_path.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(
@@ -322,7 +324,7 @@ def write_test_report_csv(results: list[TestResult], actual_output_dir: Path) ->
     return report_path
 
 
-def add_metadata_table(document: Document, test_suite_dir: Path, actual_output_dir: Path) -> None:
+def add_metadata_table(document: Document, TEST_SUITE_DIR: Path, ACTUAL_OUTPUT_DIR: Path) -> None:
     """
     Add run metadata to the Word report.
     """
@@ -331,9 +333,9 @@ def add_metadata_table(document: Document, test_suite_dir: Path, actual_output_d
     table.style = "Table Grid"
 
     metadata_rows = [
-        ("Test suite directory", str(test_suite_dir)),
-        ("Actual output directory", str(actual_output_dir)),
-        ("Manifest", str(test_suite_dir / MANIFEST_NAME)),
+        ("Test suite directory", str(TEST_SUITE_DIR)),
+        ("Actual output directory", str(ACTUAL_OUTPUT_DIR)),
+        ("Manifest", str(TEST_SUITE_DIR / MANIFEST_NAME)),
     ]
 
     for label, value in metadata_rows:
@@ -396,8 +398,8 @@ def add_results_table(document: Document, results: list[TestResult]) -> None:
 
 def write_test_report_docx(
     results: list[TestResult],
-    actual_output_dir: Path,
-    test_suite_dir: Path,
+    ACTUAL_OUTPUT_DIR: Path,
+    TEST_SUITE_DIR: Path,
 ) -> Path:
     """
     Write offline test results to a Word document.
@@ -407,8 +409,8 @@ def write_test_report_docx(
     statement that can be reviewed without opening the raw CSV report.
     """
 
-    actual_output_dir.mkdir(parents=True, exist_ok=True)
-    report_path = actual_output_dir / "test_report.docx"
+    ACTUAL_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    report_path = ACTUAL_OUTPUT_DIR / "test_report.docx"
     summary = summarize_results(results)
 
     document = Document()
@@ -427,7 +429,7 @@ def write_test_report_docx(
     )
 
     document.add_heading("Run Metadata", level=1)
-    add_metadata_table(document, test_suite_dir, actual_output_dir)
+    add_metadata_table(document, TEST_SUITE_DIR, ACTUAL_OUTPUT_DIR)
 
     document.add_heading("Execution Summary", level=1)
     add_summary_table(document, summary)
@@ -478,12 +480,12 @@ def parse_args() -> argparse.Namespace:
 
     parser = argparse.ArgumentParser(description="Run the PowerPoint Object Extraction test suite.")
     parser.add_argument(
-        "test_suite_dir",
+        "TEST_SUITE_DIR",
         type=Path,
         help="Directory containing TEST_SUITE_MANIFEST.csv, inputs/, and expected/.",
     )
     parser.add_argument(
-        "actual_output_dir",
+        "ACTUAL_OUTPUT_DIR",
         type=Path,
         help="Directory where actual outputs and test_report.csv should be written.",
     )
@@ -495,17 +497,19 @@ def main() -> None:
     """
     Run all manifest-defined test cases.
     """
+    
+    test_cases = load_manifest(TEST_SUITE_DIR)
+    ACTUAL_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    #args = parse_args()
+    #test_cases = load_manifest(args.TEST_SUITE_DIR)
+    #args.ACTUAL_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    args = parse_args()
-    test_cases = load_manifest(args.test_suite_dir)
-    args.actual_output_dir.mkdir(parents=True, exist_ok=True)
-
-    results = [run_test_case(test_case, args.actual_output_dir) for test_case in test_cases]
-    csv_report_path = write_test_report_csv(results, args.actual_output_dir)
+    results = [run_test_case(test_case, ACTUAL_OUTPUT_DIR) for test_case in test_cases]
+    csv_report_path = write_test_report_csv(results, ACTUAL_OUTPUT_DIR)
     docx_report_path = write_test_report_docx(
         results=results,
-        actual_output_dir=args.actual_output_dir,
-        test_suite_dir=args.test_suite_dir,
+        ACTUAL_OUTPUT_DIR=ACTUAL_OUTPUT_DIR,
+        TEST_SUITE_DIR=TEST_SUITE_DIR,
     )
     print_summary(results, csv_report_path, docx_report_path)
 

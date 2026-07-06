@@ -1,0 +1,13 @@
+object_id,slide_number,parent_group_id,shape_name,shape_type,text,left_in,top_in,width_in,height_in,rotation
+S001_OBJ_0001,1,,TextBox 1,TEXT_BOX,TC013 AND Gate Enable Logic,0.3,0.1,12.6,0.4,0.0
+S001_OBJ_0002,1,,Pressure Sensor OK,AUTO_SHAPE,Pressure | Sensor OK,0.8,0.9,1.7,0.55,0.0
+S001_OBJ_0003,1,,Door Closed Sensor,AUTO_SHAPE,Door Closed | Sensor,0.8,1.8,1.7,0.55,0.0
+S001_OBJ_0004,1,,Operator Enable Switch,AUTO_SHAPE,Operator | Enable Switch,0.8,2.7,1.7,0.55,0.0
+S001_OBJ_0005,1,,AND Gate,AUTO_SHAPE,AND Gate,3.5,3.2,1.5,0.65,0.0
+S001_OBJ_0006,1,,Motor Enable Command,AUTO_SHAPE,Motor Enable | Command,6.0,3.2,1.8,0.65,0.0
+S001_OBJ_0007,1,,Motor Starter Output,AUTO_SHAPE,Motor Starter | Output,8.7,3.2,1.8,0.65,0.0
+S001_OBJ_0008,1,,Control Connector Pressure,LINE,,2.5,1.175,1.0,2.35,0.0
+S001_OBJ_0009,1,,Control Connector Door,LINE,,2.5,2.075,1.0,1.45,0.0
+S001_OBJ_0010,1,,Control Connector Operator,LINE,,2.5,2.975,1.0,0.55,0.0
+S001_OBJ_0011,1,,Control Connector Enable,LINE,,5.0,3.525,1.0,0.0,0.0
+S001_OBJ_0012,1,,Control Connector Starter,LINE,,7.8,3.525,0.9,0.0,0.0

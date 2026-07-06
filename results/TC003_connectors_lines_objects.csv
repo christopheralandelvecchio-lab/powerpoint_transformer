@@ -1,0 +1,5 @@
+object_id,slide_number,parent_group_id,shape_name,shape_type,text,left_in,top_in,width_in,height_in,rotation
+S001_OBJ_0001,1,,TC003 Source Shape,AUTO_SHAPE,Source,0.75,1.5,2.0,0.8,0.0
+S001_OBJ_0002,1,,TC003 Target Shape,AUTO_SHAPE,Target,5.0,1.5,2.0,0.8,0.0
+S001_OBJ_0003,1,,TC003 Straight Connector,LINE,,2.75,1.9,2.25,0.0,0.0
+S001_OBJ_0004,1,,TC003 Standalone Line,LINE,,1.0,3.0,5.5,0.0,0.0

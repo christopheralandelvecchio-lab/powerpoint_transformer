@@ -1,0 +1,15 @@
+object_id,slide_number,parent_group_id,shape_name,shape_type,text,left_in,top_in,width_in,height_in,rotation
+S001_OBJ_0001,1,,TextBox 1,TEXT_BOX,TC017 Fault Shutdown Logic,0.3,0.1,12.6,0.4,0.0
+S001_OBJ_0002,1,,Vibration Sensor,AUTO_SHAPE,Vibration | Sensor,0.8,0.8,1.6,0.55,0.0
+S001_OBJ_0003,1,,Bearing Temp Sensor,AUTO_SHAPE,Bearing Temp | Sensor,0.8,1.6,1.6,0.55,0.0
+S001_OBJ_0004,1,,Comparator Action,AUTO_SHAPE,Comparator | Action,3.3,2.3,1.7,0.6,0.0
+S001_OBJ_0005,1,,Reset Operator Input,AUTO_SHAPE,Reset | Operator Input,0.8,3.0,1.6,0.55,0.0
+S001_OBJ_0006,1,,Trip Logic,AUTO_SHAPE,Trip Logic,5.9,3.1,1.5,0.65,0.0
+S001_OBJ_0007,1,,Shutdown Command,AUTO_SHAPE,Shutdown | Command,8.3,3.1,1.7,0.6,0.0
+S001_OBJ_0008,1,,Fault Alarm Output,AUTO_SHAPE,Fault Alarm | Output,10.6,3.1,1.7,0.6,0.0
+S001_OBJ_0009,1,,Control Connector Vibration,LINE,,2.4,1.075,0.9,1.525,0.0
+S001_OBJ_0010,1,,Control Connector Temperature,LINE,,2.4,1.875,0.9,0.725,0.0
+S001_OBJ_0011,1,,Control Connector Trip,LINE,,5.0,2.6,0.9,0.825,0.0
+S001_OBJ_0012,1,,Control Connector Reset,LINE,,2.4,3.275,3.5,0.15,0.0
+S001_OBJ_0013,1,,Control Connector Shutdown,LINE,,7.4,3.4,0.9,0.025,0.0
+S001_OBJ_0014,1,,Control Connector Alarm,LINE,,10.0,3.4,0.6,0.0,0.0

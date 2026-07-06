@@ -1,0 +1,4 @@
+object_id,slide_number,parent_group_id,shape_name,shape_type,text,left_in,top_in,width_in,height_in,rotation
+S001_OBJ_0001,1,,TC001 Rectangle,AUTO_SHAPE,Rectangle A,1.0,1.0,2.0,1.0,0.0
+S001_OBJ_0002,1,,TC001 Oval,AUTO_SHAPE,Oval B,4.0,1.0,1.5,1.2,0.0
+S001_OBJ_0003,1,,TC001 Diamond,AUTO_SHAPE,Decision C,2.5,3.0,1.4,1.4,0.0

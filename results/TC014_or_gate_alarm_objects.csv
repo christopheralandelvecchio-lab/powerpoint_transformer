@@ -1,0 +1,11 @@
+object_id,slide_number,parent_group_id,shape_name,shape_type,text,left_in,top_in,width_in,height_in,rotation
+S001_OBJ_0001,1,,TextBox 1,TEXT_BOX,TC014 OR Gate Alarm Logic,0.3,0.1,12.6,0.4,0.0
+S001_OBJ_0002,1,,Smoke Detector,AUTO_SHAPE,Smoke | Detector,0.8,1.0,1.6,0.55,0.0
+S001_OBJ_0003,1,,Heat Detector,AUTO_SHAPE,Heat | Detector,0.8,2.0,1.6,0.55,0.0
+S001_OBJ_0004,1,,OR Gate,AUTO_SHAPE,OR Gate,3.5,2.6,1.4,0.65,0.0
+S001_OBJ_0005,1,,Alarm Siren Output,AUTO_SHAPE,Alarm Siren | Output,6.0,2.2,1.7,0.6,0.0
+S001_OBJ_0006,1,,Operator Notification,AUTO_SHAPE,Operator | Notification,8.3,2.2,1.8,0.6,0.0
+S001_OBJ_0007,1,,Control Connector Smoke,LINE,,2.4,1.275,1.1,1.65,0.0
+S001_OBJ_0008,1,,Control Connector Heat,LINE,,2.4,2.275,1.1,0.65,0.0
+S001_OBJ_0009,1,,Control Connector Alarm,LINE,,4.9,2.5,1.1,0.425,0.0
+S001_OBJ_0010,1,,Control Connector Notify,LINE,,7.7,2.5,0.6,0.0,0.0
