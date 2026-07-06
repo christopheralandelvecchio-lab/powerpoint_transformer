@@ -1,0 +1,13 @@
+object_id,slide_number,parent_group_id,shape_name,shape_type,text,left_in,top_in,width_in,height_in,rotation
+S001_OBJ_0001,1,,TextBox 1,TEXT_BOX,TC016 Latch and Feedback Control,0.3,0.1,12.6,0.4,0.0
+S001_OBJ_0002,1,,Start PB Operator Input,AUTO_SHAPE,Start PB | Operator Input,0.8,0.8,1.8,0.6,0.0
+S001_OBJ_0003,1,,Stop PB Operator Input,AUTO_SHAPE,Stop PB | Operator Input,0.8,1.7,1.8,0.6,0.0
+S001_OBJ_0004,1,,SR Latch,AUTO_SHAPE,SR Latch,3.5,2.4,1.5,0.65,0.0
+S001_OBJ_0005,1,,Motor Contactor Action,AUTO_SHAPE,Motor Contactor | Action,6.0,2.4,1.9,0.65,0.0
+S001_OBJ_0006,1,,Motor Running Output,AUTO_SHAPE,Motor Running | Output,8.7,2.4,1.8,0.65,0.0
+S001_OBJ_0007,1,,Run Feedback Sensor,AUTO_SHAPE,Run Feedback | Sensor,10.9,3.4,1.7,0.6,0.0
+S001_OBJ_0008,1,,Control Connector Start,LINE,,2.6,1.1,0.9,1.625,0.0
+S001_OBJ_0009,1,,Control Connector Stop,LINE,,2.6,2.0,0.9,0.725,0.0
+S001_OBJ_0010,1,,Control Connector Coil,LINE,,5.0,2.725,1.0,0.0,0.0
+S001_OBJ_0011,1,,Control Connector Run,LINE,,7.9,2.725,0.8,0.0,0.0
+S001_OBJ_0012,1,,Control Connector Feedback,LINE,,10.5,2.725,0.4,0.975,0.0

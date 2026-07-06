@@ -1,0 +1,5 @@
+object_id,slide_number,parent_group_id,shape_name,shape_type,text,left_in,top_in,width_in,height_in,rotation
+S001_OBJ_0001,1,,Rounded Rectangle 1,AUTO_SHAPE,Source System,1.0,1.5,1.5,0.8,0.0
+S001_OBJ_0002,1,,Rounded Rectangle 2,AUTO_SHAPE,Target System,4.0,1.5,1.5,0.8,0.0
+S001_OBJ_0003,1,,TextBox 3,TEXT_BOX,Data Flow,2.6,1.1,1.2,0.4,0.0
+S001_OBJ_0004,1,,Connector Data Flow,LINE,,2.5,1.9,1.5,0.0,0.0

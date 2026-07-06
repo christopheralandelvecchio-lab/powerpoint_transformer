@@ -1,0 +1,4 @@
+object_id,slide_number,parent_group_id,shape_name,shape_type,text,left_in,top_in,width_in,height_in,rotation
+S001_OBJ_0001,1,,TC005 Slide 1 Shape,AUTO_SHAPE,Slide 1 Object,1.0,1.0,2.0,0.8,0.0
+S002_OBJ_0001,2,,TC005 Slide 2 Shape,AUTO_SHAPE,Slide 2 Object,1.0,1.0,2.0,0.8,0.0
+S002_OBJ_0002,2,,TC005 Slide 2 Oval,AUTO_SHAPE,Second Slide Oval,4.0,1.0,1.5,1.0,0.0

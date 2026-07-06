@@ -1,0 +1,2 @@
+relationship_id,slide_number,connector_object_id,source_object_id,target_object_id,relationship_type,source_endpoint,target_endpoint,confidence,label_text,notes
+S001_REL_0001,1,S001_OBJ_0004,S001_OBJ_0001,S001_OBJ_0002,connector_flow,"2.5,1.9","4.0,1.9",1.0,Data Flow,

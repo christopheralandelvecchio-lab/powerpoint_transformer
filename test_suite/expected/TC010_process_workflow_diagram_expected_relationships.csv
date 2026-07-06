@@ -1,0 +1,14 @@
+relationship_id,slide_number,connector_object_id,source_object_id,target_object_id,relationship_type,source_endpoint,target_endpoint,confidence,label_text,notes
+S001_REL_0001,1,S001_OBJ_0026,S001_OBJ_0011,S001_OBJ_0012,connector_flow,"2.15,1.38","2.45,1.38",1.0,Start,
+S001_REL_0002,1,S001_OBJ_0027,S001_OBJ_0012,S001_OBJ_0013,connector_flow,"3.55,1.38","4.0,1.38",1.0,,
+S001_REL_0003,1,S001_OBJ_0028,S001_OBJ_0012,S001_OBJ_0015,connector_flow,"3.0,1.65","3.0,2.25",1.0,Validate Order | Place Order,
+S001_REL_0004,1,S001_OBJ_0029,S001_OBJ_0015,S001_OBJ_0016,connector_flow,"3.0,2.75","3.0,3.0",1.0,Validate Order | Order | Valid?,
+S001_REL_0005,1,S001_OBJ_0030,S001_OBJ_0016,S001_OBJ_0008,connector_flow,"3.5,3.15","5.6,3.35",1.0,No,
+S001_REL_0006,1,S001_OBJ_0031,S001_OBJ_0016,S001_OBJ_0018,connector_flow,"3.0,3.7","3.0,3.9",1.0,Send to | Warehouse | Order | Valid?,
+S001_REL_0007,1,S001_OBJ_0032,S001_OBJ_0018,S001_OBJ_0019,connector_flow,"2.35,4.18","2.75,4.18",1.0,Pick Items | Send to | Warehouse,
+S001_REL_0008,1,S001_OBJ_0033,S001_OBJ_0018,S001_OBJ_0020,connector_flow,"2.75,4.4","3.0,4.4",1.0,Send to | Warehouse,
+S001_REL_0009,1,S001_OBJ_0034,S001_OBJ_0020,S001_OBJ_0021,connector_flow,"4.1,4.4","4.45,4.4",1.0,,
+S001_REL_0010,1,S001_OBJ_0035,S001_OBJ_0019,S001_OBJ_0023,connector_flow,"2.85,4.65","5.05,5.35",0.857,,
+S001_REL_0011,1,S001_OBJ_0036,S001_OBJ_0022,S001_OBJ_0023,connector_flow,"3.45,5.6","4.2,5.6",1.0,,
+S001_REL_0012,1,S001_OBJ_0037,S001_OBJ_0013,S001_OBJ_0010,connector_flow,"5.7,1.6","7.3,5.6",0.0,Notify Customer,target_distance_exceeds_threshold
+S001_REL_0013,1,S001_OBJ_0038,S001_OBJ_0014,S001_OBJ_0008,connector_flow,"6.9,1.6","7.3,3.15",0.714,,

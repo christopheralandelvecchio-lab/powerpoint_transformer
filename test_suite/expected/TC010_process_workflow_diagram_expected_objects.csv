@@ -1,0 +1,39 @@
+object_id,slide_number,parent_group_id,shape_name,shape_type,text,left_in,top_in,width_in,height_in,rotation
+S001_OBJ_0001,1,,TC010 Title,TEXT_BOX,Order Fulfillment Process,0.8,0.2,8.0,0.4,0.0
+S001_OBJ_0002,1,,TC010 Lane Customer,AUTO_SHAPE,Customer,0.3,0.9,0.75,1.05,270.0
+S001_OBJ_0003,1,,TC010 Lane Sales,AUTO_SHAPE,Sales,0.3,2.05,0.75,1.05,270.0
+S001_OBJ_0004,1,,TC010 Lane Warehouse,AUTO_SHAPE,Warehouse,0.3,3.45,0.75,1.05,270.0
+S001_OBJ_0005,1,,TC010 Lane Shipping,AUTO_SHAPE,Shipping,0.3,4.95,0.75,1.05,270.0
+S001_OBJ_0006,1,,TC010 Swimlane Divider 0.85,LINE,,0.3,0.85,8.7,0.0,0.0
+S001_OBJ_0007,1,,TC010 Swimlane Divider 1.95,LINE,,0.3,1.95,8.7,0.0,0.0
+S001_OBJ_0008,1,,TC010 Swimlane Divider 3.35,LINE,,0.3,3.35,8.7,0.0,0.0
+S001_OBJ_0009,1,,TC010 Swimlane Divider 4.85,LINE,,0.3,4.85,8.7,0.0,0.0
+S001_OBJ_0010,1,,TC010 Swimlane Divider 6.15,LINE,,0.3,6.15,8.7,0.0,0.0
+S001_OBJ_0011,1,,TC010 Start,AUTO_SHAPE,Start,1.25,1.15,0.9,0.45,0.0
+S001_OBJ_0012,1,,TC010 Place Order,AUTO_SHAPE,Place Order,2.45,1.1,1.1,0.55,0.0
+S001_OBJ_0013,1,,TC010 Receive Confirmation,AUTO_SHAPE,Receive Order | Confirmation,4.0,1.1,1.4,0.55,0.0
+S001_OBJ_0014,1,,TC010 End,AUTO_SHAPE,End,6.9,1.15,0.8,0.45,0.0
+S001_OBJ_0015,1,,TC010 Validate Order,AUTO_SHAPE,Validate Order,2.45,2.25,1.2,0.5,0.0
+S001_OBJ_0016,1,,TC010 Order Valid Decision,AUTO_SHAPE,Order | Valid?,2.6,3.0,0.9,0.7,0.0
+S001_OBJ_0017,1,,TC010 Notify Customer,AUTO_SHAPE,Notify Customer,5.6,2.85,1.3,0.55,0.0
+S001_OBJ_0018,1,,TC010 Send to Warehouse,AUTO_SHAPE,Send to | Warehouse,2.35,3.9,1.4,0.55,0.0
+S001_OBJ_0019,1,,TC010 Pick Items,AUTO_SHAPE,Pick Items,1.65,4.15,1.1,0.5,0.0
+S001_OBJ_0020,1,,TC010 Pack Items,AUTO_SHAPE,Pack Items,3.0,4.15,1.1,0.5,0.0
+S001_OBJ_0021,1,,TC010 Update Inventory,AUTO_SHAPE,Update | Inventory,4.45,4.15,1.2,0.5,0.0
+S001_OBJ_0022,1,,TC010 Ship Order,AUTO_SHAPE,Ship Order,2.25,5.35,1.2,0.5,0.0
+S001_OBJ_0023,1,,TC010 Provide Tracking,AUTO_SHAPE,Provide Tracking | Information,4.2,5.35,1.5,0.5,0.0
+S001_OBJ_0024,1,,TC010 Yes Label,TEXT_BOX,Yes,3.45,3.55,0.35,0.2,0.0
+S001_OBJ_0025,1,,TC010 No Label,TEXT_BOX,No,4.25,3.05,0.35,0.2,0.0
+S001_OBJ_0026,1,,TC010 Start to Place,LINE,,2.15,1.38,0.3,0.0,0.0
+S001_OBJ_0027,1,,TC010 Place to Confirmation,LINE,,3.55,1.38,0.45,0.0,0.0
+S001_OBJ_0028,1,,TC010 Place to Validate,LINE,,3.0,1.65,0.0,0.6,0.0
+S001_OBJ_0029,1,,TC010 Validate to Decision,LINE,,3.0,2.75,0.0,0.25,0.0
+S001_OBJ_0030,1,,TC010 Decision to Notify,LINE,,3.5,3.15,2.1,0.2,0.0
+S001_OBJ_0031,1,,TC010 Decision to Warehouse,LINE,,3.0,3.7,0.0,0.2,0.0
+S001_OBJ_0032,1,,TC010 Send to Pick,LINE,,2.35,4.18,0.4,0.0,0.0
+S001_OBJ_0033,1,,TC010 Pick to Pack,LINE,,2.75,4.4,0.25,0.0,0.0
+S001_OBJ_0034,1,,TC010 Pack to Inventory,LINE,,4.1,4.4,0.35,0.0,0.0
+S001_OBJ_0035,1,,TC010 Inventory to Ship,LINE,,2.85,4.65,2.2,0.7,0.0
+S001_OBJ_0036,1,,TC010 Ship to Tracking,LINE,,3.45,5.6,0.75,0.0,0.0
+S001_OBJ_0037,1,,TC010 Tracking to End,LINE,,5.7,1.6,1.6,4.0,0.0
+S001_OBJ_0038,1,,TC010 Notify to End,LINE,,6.9,1.6,0.4,1.55,0.0
